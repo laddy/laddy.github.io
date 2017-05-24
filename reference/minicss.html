@@ -1,0 +1,1617 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="cheatsheet mini.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>HowTo mini.css</title>
+
+<link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/common.css">
+<style>
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.title-section {
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    color: #eee;
+}
+
+.middle-title {
+    margin: 40px 0 0 0;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.sample .row div {
+    border: 1px solid #eee;
+    color: #fff;
+    background-color: #333;
+}
+</style>
+
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  
+<header class="sticky">
+    <div class="">
+        <a href="#" role="button">Home</a>
+        <a href="#" role="button">About</a>
+        <a href="#" role="button">Contact</a>
+        <form action="//auth/login">
+            <div class="input-group">
+              <label for="username">username</label> 
+              <input type="email" value="" id="username" placeholder="username">
+            </div>
+            <div class="input-group">
+              <label for="pwd">password</label> 
+              <input type="password" value="" id="pwd" placeholder="password">
+            </div>
+
+            <div class="input-group">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</header>
+
+
+<div class="container">
+    <h2>mini.css</h2>
+    <ul>
+        <li>CSSフレームワーク
+        <li>http://minicss.org/
+        <li>サイズの小ささ
+        <li>レスポンシブ
+        <li>他のライブラリに非依存
+    </ul>
+    
+    <h2>Setup Tools</h2>
+    <blockquote>
+      npm install mini.css<br>
+      yarn add mini.css<br>
+      bower install mini.css<br>
+    </blockquote>    
+
+    <h2>CDN</h2>
+    <pre>
+    &lt;link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.2.0/dist/mini-default.min.css"&gt;
+    </pre>
+
+    
+    <h2 class="page-header"><i class="fa fa-font fa-fw" aria-hidden="true"></i> Core</h2>
+    
+    <!-- heading -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3><mark class="tag">Heading</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <h1>Heading 1<small>Subheading</small></h1>
+            <h2>Heading 2<small>Subheading</small></h2>
+            <h3>Heading 3<small>Subheading</small></h3>
+            <h4>Heading 4<small>Subheading</small></h4>
+            <h5>Heading 5<small>Subheading</small></h5>
+            <h6>Heading 6<small>Subheading</small></h6>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;h1&gt;Heading 1&lt;small&gt;Subheading&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;small&gt;Subheading&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;small&gt;Subheading&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;small&gt;Subheading&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;small&gt;Subheading&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;small&gt;Subheading&lt;/small&gt;&lt;/h6&gt;</pre>
+        </div>
+    </div>
+          
+    <hr class="title-section">
+          
+    <!-- Common Paragraph -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Common Paragraph</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <p>This is a paragraph with some <strong>bold text</strong> and some <em>italics text</em>.</p>
+            <a href="#">This is a link.</a>
+            <small>This is some small text.</small>
+            <sub>Subscript</sub>
+            <sup>Superscript</sup>
+            <code>Inline code</code>
+            <kbd>Keyboard Input</kbd>
+            <hr>
+            <pre>This is some preformatted text.</pre>
+            <blockquote cite="www.quotation.source">
+            This is some quoted text from another website or person.
+            </blockquote>
+        </div>
+        
+        <div class="col-md-6">
+            <pre>&lt;p&gt;This is a paragraph with some &lt;strong&gt;bold text&lt;/strong&gt; and some &lt;em&gt;italics text&lt;/em&gt;.&lt;/p&gt;
+&lt;a href=&quot;#&quot;&gt;This is a link.&lt;/a&gt;
+&lt;small&gt;This is some small text.&lt;/small&gt;
+&lt;sub&gt;Subscript&lt;/sub&gt;
+&lt;sup&gt;Superscript&lt;/sup&gt;
+&lt;code&gt;Inline code&lt;/code&gt;
+&lt;kbd&gt;Keyboard Input&lt;/kbd&gt;
+&lt;hr&gt;
+&lt;pre&gt;This is some preformatted text.&lt;/pre&gt;
+&lt;blockquote cite=&quot;www.quotation.source&quot;&gt;
+This is some quoted text from another website or person.
+&lt;/blockquote&gt;</pre>
+        </div>
+    </div>
+          
+    <hr class="title-section">
+
+    <!-- LIST -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">List</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Strawberry</li>
+            </ul>
+                
+            <ol>
+                <li>Wake up</li>
+                <li>Eat breakfast</li>
+                <li>Go to work</li>
+            </ol>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Orange&lt;/li&gt;
+  &lt;li&gt;Strawberry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Wake up&lt;/li&gt;
+  &lt;li&gt;Eat breakfast&lt;/li&gt;
+  &lt;li&gt;Go to work&lt;/li&gt;
+&lt;/ol&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- IMAGE -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">IMAGE</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <figure>
+              <img src="https://placehold.it/800x600">
+              <figcaption>Image caption</figcaption>
+            </figure>
+        </div>
+            
+        <div class="col-md-6">
+            <p>Image elements (<img>) are responsive by default</p>
+            <pre>&lt;figure&gt;
+    &lt;img src=&quot;https://placehold.it/800x600&quot;&gt;
+    &lt;figcaption&gt;Image caption&lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <h2 class="page-header"><i class="fa fa-th-large fa-fw" aria-hidden="true"></i> Grid</h2>
+    
+    <!-- Basic layout  -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Basic layout</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="container sample">
+              <div class="row">
+                <div class="col-sm-1"> 1 </div>
+                <div class="col-sm-11"> 11 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2"> 2 </div>
+                <div class="col-sm-10"> 10 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3"> 3 </div>
+                <div class="col-sm-9"> 9 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4"> 4 </div>
+                <div class="col-sm-8"> 8 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5"> 5 </div>
+                <div class="col-sm-7"> 7 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6"> 6 </div>
+                <div class="col-sm-6"> 6 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"> 12 </div>
+                <div class="row">
+                    <div class="col-sm"> sm </div>
+                    <div class="col-sm"> sm </div>
+                </div>
+              </div>
+              <div class="row">
+                    <div class="col-md"> md </div>
+                    <div class="col-md"> md </div>
+                    <div class="col-md"> md </div>
+                    <div class="col-md"> md </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;div class=&quot;container sample&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-1&quot;&gt; 1 &lt;/div&gt;
+    &lt;div class=&quot;col-sm-11&quot;&gt; 11 &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt; 2 &lt;/div&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt; 10 &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-3&quot;&gt; 3 &lt;/div&gt;
+    &lt;div class=&quot;col-sm-9&quot;&gt; 9 &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt; 4 &lt;/div&gt;
+    &lt;div class=&quot;col-sm-8&quot;&gt; 8 &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-5&quot;&gt; 5 &lt;/div&gt;
+    &lt;div class=&quot;col-sm-7&quot;&gt; 7 &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt; 6 &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt; 6 &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt; 12 &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm&quot;&gt; sm &lt;/div&gt;
+        &lt;div class=&quot;col-sm&quot;&gt; sm &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md&quot;&gt; md &lt;/div&gt;
+        &lt;div class=&quot;col-md&quot;&gt; md &lt;/div&gt;
+        &lt;div class=&quot;col-md&quot;&gt; md &lt;/div&gt;
+        &lt;div class=&quot;col-md&quot;&gt; md &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+    
+    <!-- Screen-specific layouts -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Screen-specific layouts</mark></h3>
+        </div>
+        
+        <div class="col-md-6 sample">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">sm</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-2">row1</div>
+                <div class="col-sm-12 col-md-5 col-lg-7">row2</div>
+                <div class="col-sm-12 col-md-4 col-lg-3">row3</div>
+              </div>
+              <div class="row">
+                <div class="col-sm">sm</div>
+              </div>
+             </div>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm&quot;&gt;sm&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-12 col-md-3 col-lg-2&quot;&gt;row1&lt;/div&gt;
+    &lt;div class=&quot;col-sm-12 col-md-5 col-lg-7&quot;&gt;row2&lt;/div&gt;
+    &lt;div class=&quot;col-sm-12 col-md-4 col-lg-3&quot;&gt;row3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm&quot;&gt;sm&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+    
+    <!-- Predefined layouts -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Predefined layouts</mark></h3>
+        </div>
+        
+        <div class="col-md-6 sample">
+            <div class="row cols-sm-6">
+              <div>
+                <p>col-sm-6</p>
+              </div>
+              <div>
+                <p>col-sm-6</p>
+              </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;div class=&quot;row cols-sm-6&quot;&gt;
+  &lt;div&gt;
+    &lt;p&gt;col-sm-6&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;p&gt;col-sm-6&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+    
+    <!-- Column offsets -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Column offsets</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="container sample">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">offset-1</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm col-sm-offset-2">offset-2</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">offset-3</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-4">offset-4</div>
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-1">offset-row-1</div>
+                        <div class="col-sm-5 col-sm-offset-1">offset-row-1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-10 col-sm-offset-1&quot;&gt;offset-1&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm col-sm-offset-2&quot;&gt;offset-2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;offset-3&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-8 col-sm-offset-4&quot;&gt;offset-4&lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-5 col-sm-offset-1&quot;&gt;offset-row-1&lt;/div&gt;
+            &lt;div class=&quot;col-sm-5 col-sm-offset-1&quot;&gt;offset-row-1&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+    
+    <!-- Column reordering -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Column reordering</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="container sample">
+              <div class="row">
+                <div class="col-sm col-md-last col-lg-normal">md-Last, lg-Normal</div>
+                <div class="col-sm-first col-md-normal">sm-First, md-normal</div>
+                <div class="col-sm col-md-first col-lg-normal">md-First, lg-Normal</div>
+              </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;div class=&quot;container sample&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm col-md-last col-lg-normal&quot;&gt;md-Last, lg-Normal&lt;/div&gt;
+    &lt;div class=&quot;col-sm-first col-md-normal&quot;&gt;sm-First, md-normal&lt;/div&gt;
+    &lt;div class=&quot;col-sm col-md-first col-lg-normal&quot;&gt;md-First, lg-Normal&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+    
+    <!-- Media object pattern -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Media object pattern</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+<div class="row">
+    <div class="col-sm-3">
+        <img class="section media" src="https://placehold.it/800x600" alt="image">
+    </div>
+    <div class="col-sm">
+        <h2>Media object heading</h2>
+        <p>Media object content...</p>
+    </div>
+</div>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;img class=&quot;section media&quot; src=&quot;https://placehold.it/800x600&quot; alt=&quot;image&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm&quot;&gt;
+        &lt;h2&gt;Media object heading&lt;/h2&gt;
+        &lt;p&gt;Media object content...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+    
+    <h2 class="page-header"><i class="fa fa-keyboard-o fa-fw" aria-hidden="true"></i> Input Control</h2>
+    
+    <!-- Form -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Form</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <form>
+              <fieldset>
+                <legend>Simple form</legend>
+                <div class="input-group fluid">
+                  <label for="username">username</label>
+                  <input type="email" value="" id="username" placeholder="username">
+                </div>
+                <div class="input-group fluid">
+                  <label for="pwd">password</label>
+                  <input type="password" value="" id="pwd" placeholder="password">
+                </div>
+              </fieldset>
+            </form>
+            
+            <form>
+              <fieldset>
+                <legend>Responsive form</legend>
+                <div class="row">
+                  <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <label for="username">username</label>
+                    <input type="email" value="" id="username" placeholder="username">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <label for="pwd">password</label>
+                    <input type="password" value="" id="pwd" placeholder="password">
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Simple form&lt;/legend&gt;
+    &lt;div class=&quot;input-group fluid&quot;&gt;
+      &lt;label for=&quot;username&quot;&gt;username&lt;/label&gt;
+      &lt;input type=&quot;email&quot; value=&quot;&quot; id=&quot;username&quot; placeholder=&quot;username&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-group fluid&quot;&gt;
+      &lt;label for=&quot;pwd&quot;&gt;password&lt;/label&gt;
+      &lt;input type=&quot;password&quot; value=&quot;&quot; id=&quot;pwd&quot; placeholder=&quot;password&quot;&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Responsive form&lt;/legend&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-12 col-md-10 col-md-offset-1&quot;&gt;
+        &lt;label for=&quot;username&quot;&gt;username&lt;/label&gt;
+        &lt;input type=&quot;email&quot; value=&quot;&quot; id=&quot;username&quot; placeholder=&quot;username&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-12 col-md-10 col-md-offset-1&quot;&gt;
+        &lt;label for=&quot;pwd&quot;&gt;password&lt;/label&gt;
+        &lt;input type=&quot;password&quot; value=&quot;&quot; id=&quot;pwd&quot; placeholder=&quot;password&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Checkbox -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Checkboxes & radio buttons</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="input-group">
+              <input type="checkbox" id="check1" tabindex="0">
+              <label for="check1">Checkbox</label>
+            </div>
+            
+            <div class="input-group">
+              <input type="radio" id="rad1" tabindex="0" name="radio-group-1">
+              <label for="rad1">Radio</label>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;check1&quot; tabindex=&quot;0&quot;&gt;
+  &lt;label for=&quot;check1&quot;&gt;Checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;rad1&quot; tabindex=&quot;0&quot; name=&quot;radio-group-1&quot;&gt;
+  &lt;label for=&quot;rad1&quot;&gt;Radio&lt;/label&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Buttons -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Button</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <button>Default button</button>
+            <input type="button" class="primary" value="Primary button">
+            <input type="reset" class="secondary" value="Secondary button">
+            <input type="submit" class="tertiary" value="Tertiary button">
+            <button class="inverse">Inverse button</button>
+            <button class="small">Small button</button>
+            <button class="large">Large button</button>
+            <button disabled>Disabled button</button>
+            <a href="#" class="button">Link button</a>
+            <a href="#" role="button">Link button</a>
+            <label class="button">Label button</label>
+            <label role="button">Label button</label>
+            
+            <div class="button-group">
+              <button>Button</button>
+              <button class="primary">Button</button>
+              <button>Button</button>
+              <a class="button">Button</a>
+            </div>
+            
+            <div class="button-group">
+              <button>Button</button>
+              <input type="reset" class="secondary" value="Secondary button">
+              <label class="button inverse">Label button</label>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;button&gt;Default button&lt;/button&gt;
+&lt;input type=&quot;button&quot; class=&quot;primary&quot; value=&quot;Primary button&quot;&gt;
+&lt;input type=&quot;reset&quot; class=&quot;secondary&quot; value=&quot;Secondary button&quot;&gt;
+&lt;input type=&quot;submit&quot; class=&quot;tertiary&quot; value=&quot;Tertiary button&quot;&gt;
+&lt;button class=&quot;inverse&quot;&gt;Inverse button&lt;/button&gt;
+&lt;button class=&quot;small&quot;&gt;Small button&lt;/button&gt;
+&lt;button class=&quot;large&quot;&gt;Large button&lt;/button&gt;
+&lt;button disabled&gt;Disabled button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Link button&lt;/a&gt;
+&lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;Link button&lt;/a&gt;
+&lt;label class=&quot;button&quot;&gt;Label button&lt;/label&gt;
+&lt;label role=&quot;button&quot;&gt;Label button&lt;/label&gt;
+
+&lt;div class=&quot;button-group&quot;&gt;
+  &lt;button&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;primary&quot;&gt;Button&lt;/button&gt;
+  &lt;button&gt;Button&lt;/button&gt;
+  &lt;a&gt;Button&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-group&quot;&gt;
+  &lt;button&gt;Button&lt;/button&gt;
+  &lt;input type=&quot;reset&quot; class=&quot;secondary&quot; value=&quot;Secondary button&quot;&gt;
+  &lt;label class=&quot;button inverse&quot;&gt;Label button&lt;/label&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Input file -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">File upload buttons</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <input type="file" id="file-input">
+            <label for="file-input" class="button">Upload file...</label>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;input type=&quot;file&quot; id=&quot;file-input&quot;&gt;
+&lt;label for=&quot;file-input&quot; class=&quot;button&quot;&gt;Upload file...&lt;/label&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <h2 class="page-header"><i class="fa fa-compass fa-fw" aria-hidden="true"></i> Navigation</h2>
+    
+    <!-- HEADER -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">HEADER</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <header>
+              <a href="#" class="logo">Logo</a>
+              <button>Home</button>
+              <a href="#" class="button">News</a>
+              <span>|</span>
+              <button>About</button>
+              <a href="#" role="button">Contact</a>
+            </header>
+        </div>
+            
+        <div class="col-md-6">
+             <pre>&lt;header&gt;
+  &lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;Logo&lt;/a&gt;
+  &lt;button&gt;Home&lt;/button&gt;
+  &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;News&lt;/a&gt;
+  &lt;span&gt;|&lt;/span&gt;
+  &lt;button&gt;About&lt;/button&gt;
+  &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;Contact&lt;/a&gt;
+&lt;/header&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Navigation bar -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Navigation bar</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <nav>
+              <a href="#">Home</a>
+              <span>News</span>
+              <a href="#" class="sublink-1">New Courses</a>
+              <a href="#" class="sublink-1">Certifications</a>
+              <span class="sublink-1">Events</span>
+              <a href="#" class="sublink-2">Course Showcase - 12th, Dec</a>
+              <a href="#" class="sublink-2">Staff AMA - 16th, Dec</a>
+              <a href="#" class="sublink-1">Policy Update</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </nav>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;nav&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;span&gt;News&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;sublink-1&quot;&gt;New Courses&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;sublink-1&quot;&gt;Certifications&lt;/a&gt;
+  &lt;span class=&quot;sublink-1&quot;&gt;Events&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;sublink-2&quot;&gt;Course Showcase - 12th, Dec&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;sublink-2&quot;&gt;Staff AMA - 16th, Dec&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;sublink-1&quot;&gt;Policy Update&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Drawer -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Drawer</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="row">
+                
+            <div class="col-sm-12 col-sm-last col-md-12 col-md-normal">
+            <div style="height: 15rem;"><br>
+            <style>.drawer.demo { position: absolute; height: 15rem; z-index: 0; top: 6.625rem; height: 12.5rem;} [type="checkbox"]:checked + .drawer.demo { z-index: 1001; margin-left: 0.75rem;}</style>
+            <header><label for="demo-toggle" class="button drawer-toggle persistent"></label></header> <br>
+            <input type="checkbox" id="demo-toggle"> <nav class="drawer demo persistent">
+            <label for="demo-toggle" class="close"></label><a href="#">Home</a> <span>News</span>
+            <a href="#" class="sublink-1">New Courses</a> <a href="#" class="sublink-1">Certifications</a>
+            <span class="sublink-1">Events</span> <a href="#" class="sublink-2">Course Showcase - 12th, Dec</a>
+            <a href="#" class="sublink-2">Staff AMA - 16th, Dec</a> <a href="#" class="sublink-1">Policy Update</a>
+            <a href="#">About</a> <a href="#">Contact</a><br></nav>
+            </div>
+            </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            mmmmm isn't working....???
+            <pre></pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- footer -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">FOOTER</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <footer>
+              <p>&copy; 2001-2016 Web Corporation | <a href="#">About</a> | <a href="#">Terms of use</a></p>
+            </footer>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;footer&gt;
+  &lt;p&gt;&amp;copy; 2001-2016 Web Corporation | &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Terms of use&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+    
+    <h2 class="page-header"><i class="fa fa-table fa-fw" aria-hidden="true"></i> Table</h2>
+    
+    <!-- Table -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Table</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <style>
+                table#carded { border-collapse: collapse;border: 0;width: 100%; box-shadow: none; }
+                table#carded thead, table#carded th { border: 0;height: 1px;width: 1px; margin: -1px; overflow: hidden; padding: 0;position: absolute;clip: rect(0 0 0 0); -webkit-clip-path: inset(100%); clip-path: inset(100%); }
+                table#carded tr {display: block;border: 1px solid #c9c9c9;box-shadow: none;background: #fafafa; margin-bottom: 0.625rem; }
+                table#carded td {display: block;border: 0; border-bottom: 1px solid #c9c9c9; text-align: right; }
+                table#carded td:before { content: attr(data-label); float: left; font-weight: 700; }
+                table#carded td:last-child { border-bottom: 0; } .border-fix > td, .border-fix > th { border-top: 0; }.col-sm-12.col-sm-last.col-md-12.col-md-normal {box-sizing: border-box;border-bottom: 1px solid #c9c9c9;} @media (max-width: 767px){.col-sm-12.col-sm-last.col-md-12.col-md-normal {border: 0;border-top: 1px solid #c9c9c9;}}
+            </style>
+            
+            <h4 class="middle-title">Medium/Large screen layout</h4>
+            <table>
+              <caption>People</caption>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Alias</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Name">Chad</td>
+                  <td data-label="Surname">Wilberts</td>
+                  <td data-label="Alias">MrOne</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Adam</td>
+                  <td data-label="Surname">Smith</td>
+                  <td data-label="Alias">TheSmith</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Sophia</td>
+                  <td data-label="Surname">Canderson</td>
+                  <td data-label="Alias">Candee</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h4 class="middle-title">Small screen layout</h4>
+            <table id="carded">
+              <caption>People</caption>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Alias</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Name">Chad</td>
+                  <td data-label="Surname">Wilberts</td>
+                  <td data-label="Alias">MrOne</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Adam</td>
+                  <td data-label="Surname">Smith</td>
+                  <td data-label="Alias">TheSmith</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Sophia</td>
+                  <td data-label="Surname">Canderson</td>
+                  <td data-label="Alias">Candee</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;table&gt;
+  &lt;caption&gt;People&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Surname&lt;/th&gt;
+      &lt;th&gt;Alias&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td data-label=&quot;Name&quot;&gt;Chad&lt;/td&gt;
+      &lt;td data-label=&quot;Surname&quot;&gt;Wilberts&lt;/td&gt;
+      &lt;td data-label=&quot;Alias&quot;&gt;MrOne&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td data-label=&quot;Name&quot;&gt;Adam&lt;/td&gt;
+      &lt;td data-label=&quot;Surname&quot;&gt;Smith&lt;/td&gt;
+      &lt;td data-label=&quot;Alias&quot;&gt;TheSmith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td data-label=&quot;Name&quot;&gt;Sophia&lt;/td&gt;
+      &lt;td data-label=&quot;Surname&quot;&gt;Canderson&lt;/td&gt;
+      &lt;td data-label=&quot;Alias&quot;&gt;Candee&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Horizontal tables -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Horizontal tables</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <table class="horizontal">
+              <caption>People</caption>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Alias</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Name">Chad</td>
+                  <td data-label="Surname">Wilberts</td>
+                  <td data-label="Alias">MrOne</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Adam</td>
+                  <td data-label="Surname">Smith</td>
+                  <td data-label="Alias">TheSmith</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Sophia</td>
+                  <td data-label="Surname">Canderson</td>
+                  <td data-label="Alias">Candee</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;table class=&quot;horizontal&quot;&gt;
+  &lt;caption&gt;People&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Surname&lt;/th&gt;
+      &lt;th&gt;Alias&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td data-label=&quot;Name&quot;&gt;Chad&lt;/td&gt;
+      &lt;td data-label=&quot;Surname&quot;&gt;Wilberts&lt;/td&gt;
+      &lt;td data-label=&quot;Alias&quot;&gt;MrOne&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td data-label=&quot;Name&quot;&gt;Adam&lt;/td&gt;
+      &lt;td data-label=&quot;Surname&quot;&gt;Smith&lt;/td&gt;
+      &lt;td data-label=&quot;Alias&quot;&gt;TheSmith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td data-label=&quot;Name&quot;&gt;Sophia&lt;/td&gt;
+      &lt;td data-label=&quot;Surname&quot;&gt;Canderson&lt;/td&gt;
+      &lt;td data-label=&quot;Alias&quot;&gt;Candee&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Table variants & matrices -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Table variants & matrices</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <table class="preset">
+              <caption>Star Wars Character Alignment Table</caption>
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>Lawful</td>
+                  <th>Neutral</td>
+                  <th>Chaotic</td>
+                </tr>
+                <tr>
+                  <th>Good</th>
+                  <td>Yoda</td>
+                  <td>Luke Skywalker</td>
+                  <td>Chewbacca</td>
+                </tr>
+                <tr>
+                  <th>Neutral</th>
+                  <td>C-3PO</td>
+                  <td>Boba Fett</td>
+                  <td>Han Solo</td>
+                </tr>
+                <tr>
+                  <th>Bad</th>
+                  <td>Darth Vader</td>
+                  <td>Emperor Palpatine</td>
+                  <td>Jabba the Hutt</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <table class="striped">
+              <caption>People</caption>
+              <thead>
+                <!-- ... -->
+              </thead>
+              <tbody>
+                <!-- ... -->
+              </tbody>
+            </table>
+        </div>
+            
+        <div class="col-md-6">
+            <pre></pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+    
+    <h2 class="page-header"><i class="fa fa-id-card-o fa-fw" aria-hidden="true"></i> Card</h2>
+
+    <!-- Card -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Card</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="row">
+              <div class="card">
+                <div class="section">
+                  <h3>Card Title</h3>
+                  <p>Card content...</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="section">
+                  <h3>Card Title</h3>
+                  <p>Card content...</p>
+                </div>
+              </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;section&quot;&gt;
+      &lt;h3&gt;Card Title&lt;/h3&gt;
+      &lt;p&gt;Card content...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;section&quot;&gt;
+      &lt;h3&gt;Card Title&lt;/h3&gt;
+      &lt;p&gt;Card content...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Sections & media -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Sections & media</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="row">
+                <div class="card"><div class="section"><h3>Card with image</h3></div><img class="section media" src="https://placehold.it/800x600" alt="image"><div class="section"><p>Content</p></div></div>
+                <div class="card"><iframe class="section media" width="1280" height="720" src="https://www.youtube.com/embed/ScMzIvxBSi4"></iframe><div class="section"><h3>Card with video</h3></div></div>
+                <div class="card"><div class="section"><h3>Normal section</h3></div><div class="section double-padded"><h3>Double-padded section</h3></div></div>
+                <div class="card"><div class="section"><h3>Normal section</h3></div><div class="section dark"><h3>Dark section</h3></div><div class="section darker"><h3>Darker section</h3></div></div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;h3&gt;Card with image&lt;/h3&gt;&lt;/div&gt;&lt;img class=&quot;section media&quot; src=&quot;https://placehold.it/800x600&quot; alt=&quot;image&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;p&gt;Content&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;iframe class=&quot;section media&quot; width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://www.youtube.com/embed/ScMzIvxBSi4&quot;&gt;&lt;/iframe&gt;&lt;div class=&quot;section&quot;&gt;&lt;h3&gt;Card with video&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;h3&gt;Normal section&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;section double-padded&quot;&gt;&lt;h3&gt;Double-padded section&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;h3&gt;Normal section&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;section dark&quot;&gt;&lt;h3&gt;Dark section&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;section darker&quot;&gt;&lt;h3&gt;Darker section&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Card sizing & fluidity -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Card sizing & fluidity</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="row">
+                <div class="card small"><div class="section"><h3>Small Card</h3><p>Small cards are <code>240px</code> wide.</p></div></div>
+                <div class="card large"><div class="section"><h3>Large Card</h3><p>Large cards are <code>480px</code> wide.</p></div></div>
+                <div class="col-sm-12 col-md-12 col-lg">
+                  <div class="card fluid" style="margin: 2px 10px 20px;"><div class="section"><h3>Fluid Card</h3><p>Fluid cards scale their width based on their container. Always wrap them in a column.</p></div></div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card small&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;h3&gt;Small Card&lt;/h3&gt;&lt;p&gt;Small cards are &lt;code&gt;240px&lt;/code&gt; wide.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;card large&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;h3&gt;Large Card&lt;/h3&gt;&lt;p&gt;Large cards are &lt;code&gt;480px&lt;/code&gt; wide.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-sm-12 col-md-12 col-lg&quot;&gt;
+      &lt;div class=&quot;card fluid&quot; style=&quot;margin: 2px 10px 20px;&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;h3&gt;Fluid Card&lt;/h3&gt;&lt;p&gt;Fluid cards scale their width based on their container. Always wrap them in a column.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Card color variants -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Card color variants</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card warning">
+              <div class="section">
+                <p>Warning</p>
+              </div>
+            </div>
+            <div class="card error">
+              <div class="section">
+                <p>Error</p>
+              </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;card warning&quot;&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;p&gt;Warning&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card error&quot;&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;p&gt;Error&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <h2 class="page-header"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Tab</h2>
+    
+    <!-- NormalTab -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Basic syntax</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="tabs">
+              <input type="radio" name="tab-group" id="tab1" checked aria-hidden="true">
+              <label for="tab1" aria-hidden="true">Tab 1</label>
+              <div>
+                <h3>Tab 1</h3>
+                <p>This is the first tab's content.</p>
+              </div>
+              <input type="radio" name="tab-group" id="tab2" aria-hidden="true">
+              <label for="tab2" aria-hidden="true">Tab 2</label>
+              <div>
+                <h3>Tab 2</h3>
+                <p>This is the second tab's content.</p>
+              </div>
+              <input type="radio" name="tab-group" id="tab3" aria-hidden="true">
+              <label for="tab3" aria-hidden="true">Tab 3</label>
+              <div>
+                <h3>Tab 3</h3>
+                <p>This is the third tab's content.</p>
+              </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;tabs&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;tab-group&quot; id=&quot;tab1&quot; checked aria-hidden=&quot;true&quot;&gt;
+  &lt;label for=&quot;tab1&quot; aria-hidden=&quot;true&quot;&gt;Tab 1&lt;/label&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Tab 1&lt;/h3&gt;
+    &lt;p&gt;This is the first tab's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;tab-group&quot; id=&quot;tab2&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;label for=&quot;tab2&quot; aria-hidden=&quot;true&quot;&gt;Tab 2&lt;/label&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Tab 2&lt;/h3&gt;
+    &lt;p&gt;This is the second tab's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;tab-group&quot; id=&quot;tab3&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;label for=&quot;tab3&quot; aria-hidden=&quot;true&quot;&gt;Tab 3&lt;/label&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Tab 3&lt;/h3&gt;
+    &lt;p&gt;This is the third tab's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Stack Tabs -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Stack Tabs</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="tabs stacked">
+              <input type="radio" name="accordion" id="a1" checked aria-hidden="true">
+              <label for="a1" aria-hidden="true">Accordion section 1</label>
+              <div>
+                <h3>Section 1</h3>
+                <p>This is the first accordion section's content.</p>
+              </div>
+              <input type="radio" name="accordion" id="a2"aria-hidden="true">
+              <label for="a2" aria-hidden="true">Accordion section 2</label>
+              <div>
+                <h3>Section 2</h3>
+                <p>This is the second accordion section's content.</p>
+              </div>
+            </div>
+            
+            <div class="tabs stacked">
+              <input type="checkbox" id="c1" aria-hidden="true">
+              <label for="c1" aria-hidden="true">Collapse section 1</label>
+              <div>
+                <p>This is the first collapse section's content.</p>
+              </div>
+              <input type="checkbox" id="c2" aria-hidden="true">
+              <label for="c2" aria-hidden="true">Collapse section 2</label>
+              <div>
+                <p>This is the second collapse section's content.</p>
+              </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;tabs stacked&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;accordion&quot; id=&quot;a1&quot; checked aria-hidden=&quot;true&quot;&gt;
+  &lt;label for=&quot;a1&quot; aria-hidden=&quot;true&quot;&gt;Accordion section 1&lt;/label&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Section 1&lt;/h3&gt;
+    &lt;p&gt;This is the first accordion section's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;accordion&quot; id=&quot;a2&quot;aria-hidden=&quot;true&quot;&gt;
+  &lt;label for=&quot;a2&quot; aria-hidden=&quot;true&quot;&gt;Accordion section 2&lt;/label&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Section 2&lt;/h3&gt;
+    &lt;p&gt;This is the second accordion section's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tabs stacked&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;c1&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;label for=&quot;c1&quot; aria-hidden=&quot;true&quot;&gt;Collapse section 1&lt;/label&gt;
+  &lt;div&gt;
+    &lt;p&gt;This is the first collapse section's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;c2&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;label for=&quot;c2&quot; aria-hidden=&quot;true&quot;&gt;Collapse section 2&lt;/label&gt;
+  &lt;div&gt;
+    &lt;p&gt;This is the second collapse section's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <h2 class="page-header"><i class="fa fa-tags fa-fw" aria-hidden="true"></i> Contextual</h2>
+    
+    <!-- Text highlighting -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Text highlighting</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <mark>primary</mark>
+            <mark class="secondary">secondary</mark>
+            <mark class="tertiary">tertiary</mark>
+            <mark class="inline-block">long highlight text...</mark>
+            <mark class="tag">tag</mark>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;mark&gt;primary&lt;/mark&gt;
+&lt;mark class=&quot;secondary&quot;&gt;secondary&lt;/mark&gt;
+&lt;mark class=&quot;tertiary&quot;&gt;tertiary&lt;/mark&gt;
+&lt;mark class=&quot;inline-block&quot;&gt;long highlight text...&lt;/mark&gt;
+&lt;mark class=&quot;tag&quot;&gt;tag&lt;/mark&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Toasts -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Toasts</mark></h3>
+        </div>
+        <style>
+            .toast.demo {  position: relative; top: 2rem; left: calc(50% - 6rem); z-index: 1;} .toast.demo.small { top: 4.5rem; left: calc(50% - 6.75rem);} .toast.demo.large { top: 7.5rem; left: calc(50% - 8rem);}
+        </style>
+        <div class="col-md-6" style="height:300px">
+            <span class="toast demo">This is a normal toast message!</span><br>
+            <span class="toast demo small">This is a large toast message!</span><br>
+            <span class="toast demo large">This is a small toast message!</span><br>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;span class=&quot;toast&quot;&gt;This is a normal toast message!&lt;/span&gt;
+&lt;span class=&quot;toast small&quot;&gt;This is a large toast message!&lt;/span&gt;
+&lt;span class=&quot;toast large&quot;&gt;This is a small toast message!&lt;/span&gt;</pre>
+        </div>
+    </div>
+     <hr class="title-section">
+
+    <!-- Tooltips -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Tooltips</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <span class="tooltip" aria-label="This is a tooltip">Hover over this text to see a tooltip!</span>
+            <span class="tooltip bottom" aria-label="This is a tooltip">Hover over this text to see a reverse tooltip!</span>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;span class=&quot;tooltip&quot; aria-label=&quot;This is a tooltip&quot;&gt;Hover over this text to see a tooltip!&lt;/span&gt;
+&lt;span class=&quot;tooltip bottom&quot; aria-label=&quot;This is a tooltip&quot;&gt;Hover over this text to see a reverse tooltip!&lt;/span&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <h2 class="page-header"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i> Progress</h2>
+    
+    <!-- Basic progress bar -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Basic progress bar</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <progress value="0" max="1000"></progress>
+            <progress value="450" max="1000"></progress>
+            <progress value="1000" max="1000"></progress>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;progress value=&quot;0&quot; max=&quot;1000&quot;&gt;&lt;/progress&gt;
+&lt;progress value=&quot;450&quot; max=&quot;1000&quot;&gt;&lt;/progress&gt;
+&lt;progress value=&quot;1000&quot; max=&quot;1000&quot;&gt;&lt;/progress&gt;</pre>
+        </div>
+    </div>
+     <hr class="title-section">
+
+    <!-- Progress bar variants -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Progress bar variants</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <progress class="secondary" value="600" max="1000"></progress>
+            <progress class="tertiary" value="300" max="1000"></progress>
+            <progress class="inline" value="150" max="1000"></progress>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;progress class=&quot;secondary&quot; value=&quot;600&quot; max=&quot;1000&quot;&gt;&lt;/progress&gt;
+&lt;progress class=&quot;tertiary&quot; value=&quot;300&quot; max=&quot;1000&quot;&gt;&lt;/progress&gt;
+&lt;progress class=&quot;inline&quot; value=&quot;150&quot; max=&quot;1000&quot;&gt;&lt;/progress&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <!-- Donut spinner -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Donut spinner</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="spinner-donut"></div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;spinner-donut&quot;&gt;&lt;/div&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <!-- Donut spinner variants -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Donut spinner variants</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="spinner-donut secondary"></div>
+            <div class="spinner-donut tertiary"></div>
+            <div class="spinner-donut large"></div>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;spinner-donut secondary&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;spinner-donut tertiary&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;spinner-donut large&quot;&gt;&lt;/div&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <h2 class="page-header"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i> Utility</h2>
+
+    <!-- Visibility helpers -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Visibility helpers</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <span class="hidden">Hidden text</span>
+            <span class="visually-hidden">Screen-reader-only text</span>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;span class=&quot;hidden&quot;&gt;Hidden text&lt;/span&gt;
+&lt;span class=&quot;visually-hidden&quot;&gt;Screen-reader-only text&lt;/span&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <!-- Generic borders & shadow -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Generic borders & shadow</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <span class="bordered">Bordered</span>
+            <span class="rounded">Rounded</span>
+            <span class="circular">Circular</span>
+            <span class="shadowed">Casts shadow</span>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;span class=&quot;bordered&quot;&gt;Bordered&lt;/span&gt;
+&lt;span class=&quot;rounded&quot;&gt;Rounded&lt;/span&gt;
+&lt;span class=&quot;circular&quot;&gt;Circular&lt;/span&gt;
+&lt;span class=&quot;shadowed&quot;&gt;Casts shadow&lt;/span&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <!-- Responsive sizing & spacing classes  -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Responsive sizing & spacing classes </mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="responsive-padding">Responsive padding</div>
+            <div class="responsive-margin">Responsive margin</div> 
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;div class=&quot;responsive-padding&quot;&gt;Responsive padding&lt;/div&gt;
+&lt;div class=&quot;responsive-margin&quot;&gt;Responsive margin&lt;/div&gt;</pre>
+        </div>
+    </div>
+    
+    <hr class="title-section">
+
+    <!-- Responsive visibility helpers -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Responsive visibility helpers</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <span class="hidden-sm">Hidden in smaller screens</span>
+            <span class="hidden-md">Hidden in medium-sized screens</span>
+            <span class="hidden-lg">Hidden in larger screens</span>
+            
+            <span class="visually-hidden-sm">Visually hidden in smaller screens</span>
+            <span class="visually-hidden-md">Visually hidden in medium-sized screens</span>
+            <span class="visually-hidden-lg">Visually hidden in larger screens</span>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;span class=&quot;hidden-sm&quot;&gt;Hidden in smaller screens&lt;/span&gt;
+&lt;span class=&quot;hidden-md&quot;&gt;Hidden in medium-sized screens&lt;/span&gt;
+&lt;span class=&quot;hidden-lg&quot;&gt;Hidden in larger screens&lt;/span&gt;
+
+&lt;span class=&quot;visually-hidden-sm&quot;&gt;Visually hidden in smaller screens&lt;/span&gt;
+&lt;span class=&quot;visually-hidden-md&quot;&gt;Visually hidden in medium-sized screens&lt;/span&gt;
+&lt;span class=&quot;visually-hidden-lg&quot;&gt;Visually hidden in larger screens&lt;/span&gt;</pre>
+        </div>
+    </div>
+
+    <hr class="title-section">
+
+    <!-- Breadcrumbs -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Breadcrumbs</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <ul class="breadcrumbs">
+              <li><a href="#">Root</a></li>
+              <li><a href="#">Folder</a></li>
+              <li>File</li>
+            </ul>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;ul class=&quot;breadcrumbs&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Root&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Folder&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;File&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        </div>
+    </div>
+     <hr class="title-section">
+
+    <!-- Close icon -->
+    <div class="row">
+        <div class="section col-md-12">
+            <h3><mark class="tag">Close icon</mark></h3>
+        </div>
+        
+        <div class="col-md-6">
+            <span class="close"></span>
+        </div>
+            
+        <div class="col-md-6">
+            <pre>&lt;span class=&quot;close&quot;&gt;&lt;/span&gt;</pre>
+        </div>
+    </div>
+
+    
+</div><!-- .container -->
+        
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+  <div class="col-md-10 col-md-offset-1">
+    <p>Using <a href="https://chalarangelo.github.io/mini.css/">mini.css</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
