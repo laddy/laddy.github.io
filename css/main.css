@@ -13,7 +13,7 @@ body {
 a.no-decoration { text-decoration: none; }
 a.no-decoration:hover { text-decoration: none; }
 
-.thumbnail_img { height : 50px; width : 100%; display : block; }
+.thumbnail_img { width : 100%; display : block; }
 
 .center_text {
   text-align: center;
