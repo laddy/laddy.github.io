@@ -3,6 +3,13 @@ body {
   height: 100%;
 }
 
+.section-title {
+  margin: 25px 0 25px 0;
+  padding: 15px 0 15px 5px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
 #main_wrapper {
   min-height: 100%;
   height: auto;
@@ -10,10 +17,19 @@ body {
   padding: 0 0 60px;
 }
 
+/* Main Top Logo */
+#main_logo {
+  text-align: center;
+  margin: 180px 0 180px 0;
+}
+.logo_area  { background-color: #666; }
+.logo_image { width:120px; }
+
 a.no-decoration { text-decoration: none; }
 a.no-decoration:hover { text-decoration: none; }
 
 .thumbnail_img { width : 100%; display : block; }
+.border_box { padding: 10px; }
 
 .center_text {
   text-align: center;
