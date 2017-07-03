@@ -1,4 +1,3 @@
-
 'use strict';
 
 // liveReloadで使う変数とか処理を定義
@@ -25,11 +24,11 @@ module.exports = function(grunt) {
             },
             html: {
                 files: ['./**/*.html'],
-                tasks: ['']
+                // tasks: ['']
             },
             css: {
                 files: ['./**/*.css'],
-                tasks: [''] // もしCompassなどのタスクがあればここに追加する。
+                // tasks: [''] // もしCompassなどのタスクがあればここに追加する。
             },
         },
         connect: {

@@ -6,11 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>HowTo mini.css</title>
-
 <link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 <style>
+header {
+  height : initial !important;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
 .page-header {
     padding-bottom: 9px;
     margin: 40px 0 20px;
@@ -35,6 +40,7 @@
     border: 1px solid #eee;
     color: #fff;
     background-color: #333;
+
 }
 </style>
 
@@ -42,57 +48,50 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 <![endif]-->
 </head>
-
 <body>
   
 <header class="sticky">
-    <div class="">
-        <a href="#" role="button">Home</a>
-        <a href="#" role="button">About</a>
-        <a href="#" role="button">Contact</a>
-        <form action="//auth/login">
-            <div class="input-group">
-              <label for="username">username</label> 
-              <input type="email" value="" id="username" placeholder="username">
-            </div>
-            <div class="input-group">
-              <label for="pwd">password</label> 
-              <input type="password" value="" id="pwd" placeholder="password">
-            </div>
-
-            <div class="input-group">
-                <input type="submit">
-            </div>
-        </form>
-    </div>
+    <a class="button" href="/" >Home</a>
+    <br>
+    <a class="button primary" href="#toc-core">Core</a>
+    <a class="button primary" href="#toc-grid">Grid</a>
+    <a class="button primary" href="#toc-input-control">Input Control</a>
+    <a class="button primary" href="#toc-navigation">Navigation</a>
+    <a class="button primary" href="#toc-table">Table</a>
+    <a class="button primary" href="#toc-card">Card</a>
+    <a class="button primary" href="#toc-tab">Tab</a>
+    <a class="button primary" href="#toc-contextual">Contextual</a>
+    <a class="button primary" href="#toc-progress">Progress</a>
+    <a class="button primary" href="#toc-utility">Utility</a>
 </header>
-
 
 <div class="container">
     <h2>mini.css</h2>
     <ul>
-        <li>CSSフレームワーク
-        <li>http://minicss.org/
-        <li>サイズの小ささ
-        <li>レスポンシブ
-        <li>他のライブラリに非依存
+        <li>配布先: <a href="http://minicss.org/">http://minicss.org/</a>
+        <li>Github: <a href="https://github.com/Chalarangelo/mini.css">https://github.com/Chalarangelo/mini.css</a>
+        <li>CSSフレームワーク、サイズの小ささやレスポンシブ、
+            他のライブラリに非依存でカスタマイズがやりやすい特徴を持つ
+        <li>Bootstrapよりもシンプルでクラスの命名規則などが似ている
     </ul>
     
-    <h2>Setup Tools</h2>
+    <h2>Setup</h2>
     <blockquote>
-      npm install mini.css<br>
-      yarn add mini.css<br>
-      bower install mini.css<br>
+      $ npm install mini.css<br>
+      $ bower install mini.css<br>
     </blockquote>    
 
     <h2>CDN</h2>
-    <pre>
-    &lt;link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css"&gt;
-    &lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.2.0/dist/mini-default.min.css"&gt;
-    </pre>
+    <pre>&lt;link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.2.0/dist/mini-default.min.css"&gt;</pre>
 
-    
-    <h2 class="page-header"><i class="fa fa-font fa-fw" aria-hidden="true"></i> Core</h2>
+
+    <h2 class="page-header">Basic Template</h2>
+    <ul>
+        <li><a href="http://minicss.org/templates">http://minicss.org/templates</a>
+    </ul>
+
+    <h2 id="toc-core" class="page-header"><i class="fa fa-font fa-fw" aria-hidden="true"></i> Core</h2>
     
     <!-- heading -->
     <div class="row">
@@ -221,7 +220,7 @@ This is some quoted text from another website or person.
     
     <hr class="title-section">
 
-    <h2 class="page-header"><i class="fa fa-th-large fa-fw" aria-hidden="true"></i> Grid</h2>
+    <h2 id="toc-grid" class="page-header"><i class="fa fa-th-large fa-fw" aria-hidden="true"></i> Grid</h2>
     
     <!-- Basic layout  -->
     <div class="row">
@@ -499,7 +498,7 @@ This is some quoted text from another website or person.
         </div>
     </div>
     
-    <h2 class="page-header"><i class="fa fa-keyboard-o fa-fw" aria-hidden="true"></i> Input Control</h2>
+    <h2 id="toc-input-control" class="page-header"><i class="fa fa-keyboard-o fa-fw" aria-hidden="true"></i> Input Control</h2>
     
     <!-- Form -->
     <div class="row">
@@ -736,7 +735,7 @@ This is some quoted text from another website or person.
 
     <hr class="title-section">
 
-    <h2 class="page-header"><i class="fa fa-compass fa-fw" aria-hidden="true"></i> Navigation</h2>
+    <h2 id="navigation" class="page-header"><i class="fa fa-compass fa-fw" aria-hidden="true"></i> Navigation</h2>
     
     <!-- HEADER -->
     <div class="row">
@@ -815,26 +814,26 @@ This is some quoted text from another website or person.
         </div>
         
         <div class="col-md-6">
-            <div class="row">
-                
-            <div class="col-sm-12 col-sm-last col-md-12 col-md-normal">
-            <div style="height: 15rem;"><br>
-            <style>.drawer.demo { position: absolute; height: 15rem; z-index: 0; top: 6.625rem; height: 12.5rem;} [type="checkbox"]:checked + .drawer.demo { z-index: 1001; margin-left: 0.75rem;}</style>
-            <header><label for="demo-toggle" class="button drawer-toggle persistent"></label></header> <br>
-            <input type="checkbox" id="demo-toggle"> <nav class="drawer demo persistent">
-            <label for="demo-toggle" class="close"></label><a href="#">Home</a> <span>News</span>
-            <a href="#" class="sublink-1">New Courses</a> <a href="#" class="sublink-1">Certifications</a>
-            <span class="sublink-1">Events</span> <a href="#" class="sublink-2">Course Showcase - 12th, Dec</a>
-            <a href="#" class="sublink-2">Staff AMA - 16th, Dec</a> <a href="#" class="sublink-1">Policy Update</a>
-            <a href="#">About</a> <a href="#">Contact</a><br></nav>
-            </div>
-            </div>
-            </div>
+           Top navigation...
         </div>
             
         <div class="col-md-6">
-            mmmmm isn't working....???
-            <pre></pre>
+            <pre>&lt;header class=&quot;sticky&quot;&gt;
+    &lt;label for=&quot;drawer-checkbox&quot; class=&quot;button drawer-toggle persistent&quot;&gt;&lt;/label&gt;
+    &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;Home&lt;/a&gt;
+    &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;About&lt;/a&gt;
+    &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;Contact&lt;/a&gt;
+&lt;/header&gt;
+
+&lt;input type=&quot;checkbox&quot; id=&quot;drawer-checkbox&quot;&gt;
+&lt;nav class=&quot;drawer persistent&quot;&gt;
+  &lt;label for=&quot;drawer-checkbox&quot; class=&quot;close&quot;&gt;&lt;/label&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+&lt;/nav&gt;</pre>
         </div>
     </div>
 
@@ -861,7 +860,7 @@ This is some quoted text from another website or person.
 
     <hr class="title-section">
     
-    <h2 class="page-header"><i class="fa fa-table fa-fw" aria-hidden="true"></i> Table</h2>
+    <h2 id="toc-table" class="page-header"><i class="fa fa-table fa-fw" aria-hidden="true"></i> Table</h2>
     
     <!-- Table -->
     <div class="row">
@@ -1080,22 +1079,66 @@ This is some quoted text from another website or person.
             <table class="striped">
               <caption>People</caption>
               <thead>
-                <!-- ... -->
+                <tr>
+                  <th>aaaaaaaa</th>
+                  <th>aaaaaaaa</th>
+                </tr>
               </thead>
               <tbody>
-                <!-- ... -->
+                <tr>
+                  <td>bbbbbbbbb</td>
+                  <td>bbbbbbbbb</td>
+                </tr>
               </tbody>
             </table>
         </div>
             
         <div class="col-md-6">
-            <pre></pre>
+            <pre>&lt;table class=&quot;preset&quot;&gt;
+  &lt;caption&gt;Star Wars Character Alignment Table&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Lawful&lt;/td&gt;
+      &lt;th&gt;Neutral&lt;/td&gt;
+      &lt;th&gt;Chaotic&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Good&lt;/th&gt;
+      &lt;td&gt;Yoda&lt;/td&gt;
+      &lt;td&gt;Luke Skywalker&lt;/td&gt;
+      &lt;td&gt;Chewbacca&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Neutral&lt;/th&gt;
+      &lt;td&gt;C-3PO&lt;/td&gt;
+      &lt;td&gt;Boba Fett&lt;/td&gt;
+      &lt;td&gt;Han Solo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Bad&lt;/th&gt;
+      &lt;td&gt;Darth Vader&lt;/td&gt;
+      &lt;td&gt;Emperor Palpatine&lt;/td&gt;
+      &lt;td&gt;Jabba the Hutt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table class=&quot;striped&quot;&gt;
+  &lt;caption&gt;People&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;!-- ... --&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;!-- ... --&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
         </div>
     </div>
 
     <hr class="title-section">
     
-    <h2 class="page-header"><i class="fa fa-id-card-o fa-fw" aria-hidden="true"></i> Card</h2>
+    <h2 id="toc-card" class="page-header"><i class="fa fa-id-card-o fa-fw" aria-hidden="true"></i> Card</h2>
 
     <!-- Card -->
     <div class="row">
@@ -1232,7 +1275,7 @@ This is some quoted text from another website or person.
 
     <hr class="title-section">
 
-    <h2 class="page-header"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Tab</h2>
+    <h2 id="toc-tab" class="page-header"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Tab</h2>
     
     <!-- NormalTab -->
     <div class="row">
@@ -1358,7 +1401,7 @@ This is some quoted text from another website or person.
 
     <hr class="title-section">
 
-    <h2 class="page-header"><i class="fa fa-tags fa-fw" aria-hidden="true"></i> Contextual</h2>
+    <h2 id="toc-contextual" class="page-header"><i class="fa fa-tags fa-fw" aria-hidden="true"></i> Contextual</h2>
     
     <!-- Text highlighting -->
     <div class="row">
@@ -1426,7 +1469,7 @@ This is some quoted text from another website or person.
     
     <hr class="title-section">
 
-    <h2 class="page-header"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i> Progress</h2>
+    <h2 id="toc-progress" class="page-header"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i> Progress</h2>
     
     <!-- Basic progress bar -->
     <div class="row">
@@ -1507,7 +1550,7 @@ This is some quoted text from another website or person.
     
     <hr class="title-section">
 
-    <h2 class="page-header"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i> Utility</h2>
+    <h2 id="toc-utility" class="page-header"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i> Utility</h2>
 
     <!-- Visibility helpers -->
     <div class="row">
